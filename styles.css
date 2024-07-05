@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    color: black;
+    overflow: hidden; /* Prevents scrolling */
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.profile-pic {
+    width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+.content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: calc(100vh - 40px);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.content-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+.content-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: filter 0.3s;
+}
+
